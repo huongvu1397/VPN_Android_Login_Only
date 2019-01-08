@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
+
+    <include layout="@layout/toolbar_home"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:text="--:--:--"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_download"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_width="wrap_content"
+                android:text="@string/down"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_upload"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_width="wrap_content"
+                android:text="@string/up"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_marginBottom="@dimen/margin_50"
+            android:layout_above="@id/appbar_fragmenthome"
+            android:layout_marginTop="@dimen/margin_70"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:background="@drawable/ic_button_bg"
+            android:layout_height="wrap_content">
+
+        <ImageView
+
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_location"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/text_sign_google"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size_s"
+                android:text="SERVER LOCATION"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <include
+            layout="@layout/appbar_home"
+            android:id="@+id/appbar_fragmenthome"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+
+</RelativeLayout>

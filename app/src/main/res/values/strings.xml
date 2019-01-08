@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">VPN_Android</string>
+    <string name="login_error">Login error</string>
+    <string name="try_again">Try Again</string>
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="confirm_password">CONFIRM PASSWORD</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="alter_login">We will not post information without your permission</string>
+    <string name="alter_password">Use 8 or more characters with a mix of letters, numbers</string>
+    <string name="connection">Connection</string>
+    <string name="off">OFF</string>
+    <string name="auto_protection">Auto Protection</string>
+    <string name="speed_test">Speed Test</string>
+    <string name="ip_checker">IP Checker</string>
+    <string name="dns_leak_test">DNS Leak Test</string>
+    <string name="down">Down</string>
+    <string name="upload">Upload</string>
+    <string name="up">Up</string>
+    <string name="account">Account</string>
+    <string name="rating">Rating</string>
+    <string name="device">DEVICE</string>
+</resources>

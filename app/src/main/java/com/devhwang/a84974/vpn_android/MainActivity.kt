@@ -4,8 +4,9 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
-import com.devhwang.a84974.vpn_android.Login.LoginFragment
+import com.devhwang.a84974.vpn_android.faq.FragmentFAQ
 import com.devhwang.a84974.vpn_android.interfaces.IManagerFragment
+import com.solarvpn.turbovpn.hotspotshield.ui.modules.setting.instruction.FragmentInstruction
 
 class MainActivity : AppCompatActivity(), IManagerFragment {
 
@@ -21,23 +22,23 @@ class MainActivity : AppCompatActivity(), IManagerFragment {
 
     private fun changeLayout(type: String?) {
         if (type.equals("MAIN")) {
-            val mainFragment = LoginFragment()
+            val mainFragment = MainFragment()
             pushFragment(mainFragment)
         }else if(type.equals("LOGIN")){
-            val loginFragment = LoginFragment()
+            val loginFragment = MainFragment()
             pushFragment(loginFragment)
         }
     }
     // khởi tạo
     private fun initControl() {
-        val mainFragment = LoginFragment()
+        val mainFragment = FragmentFAQ()
         pushFragment(mainFragment)
     }
     // replace fragment
     private fun pushFragment(fragment: Fragment) {
         val manager: FragmentManager = supportFragmentManager
         manager.beginTransaction()
-            .replace(R.id.container_main, fragment)
+            .replace(R.id.container, fragment)
             .commit()
     }
 

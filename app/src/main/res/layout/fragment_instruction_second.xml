@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/imgServerlocation"
+            android:layout_width="@dimen/_200sdp"
+            android:src="@drawable/ic_intro_serverlocation_fourx"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_height="@dimen/_355sdp"/>
+
+
+
+        <ImageView
+                android:layout_marginEnd="@dimen/_36sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_90sdp"
+                android:id="@+id/mImgSignUp"
+                android:text="@string/sign_in"
+                android:textColor="@color/colorWhite"
+                android:layout_width="@dimen/_60sdp"
+                android:background="@drawable/ic_instruction_second"
+                android:layout_height="@dimen/_60sdp"/>
+
+
+    <!---->
+    <RelativeLayout
+            android:id="@+id/first_intruction"
+            android:background="@drawable/ic_instruction_for_you"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="@string/second"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@color/colorIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:text="@string/you_tap_server_locations_to_pull_up_the_server_list_and_select_a_preferred_server_to_connect"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

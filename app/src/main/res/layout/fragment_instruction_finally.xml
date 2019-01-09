@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/imgServerlocation"
+            android:layout_width="@dimen/_200sdp"
+            android:src="@drawable/ic_connection_fourx"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_height="@dimen/_355sdp"/>
+
+    <!---->
+    <RelativeLayout
+            android:id="@+id/first_intruction"
+            android:background="@drawable/ic_instruction_for_you"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="@string/finallydot"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@color/colorIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:text="@string/click_on_main_menu_where_you_can_manage_your_account_upgrade_to_premium_check_ip_dns_leak_kill_switch_share_rate_and_set_as_desired"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

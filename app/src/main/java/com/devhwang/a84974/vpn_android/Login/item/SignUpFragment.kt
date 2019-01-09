@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.fragment_login.view.*
 
 class SignUpFragment:Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val v:View = LayoutInflater.from(activity!!).inflate(R.layout.fragment_sign_up,container,false)
+        val v:View = LayoutInflater.from(activity!!).inflate(R.layout.fragment_login_sign_up,container,false)
 
         return v
     }

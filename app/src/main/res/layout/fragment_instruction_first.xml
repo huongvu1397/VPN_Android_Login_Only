@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/imgSignUp"
+            android:layout_width="@dimen/_200sdp"
+            android:src="@drawable/ic_intro_sign_up"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_height="@dimen/_355sdp"/>
+
+    <RelativeLayout
+            android:layout_above="@id/layout_first"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/mImgSignUp"
+                android:text="@string/sign_in"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:background="@drawable/ic_sign_in"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:textSize="@dimen/text_size_s"
+                android:textColor="@color/colorWhite"
+                android:text="@string/sign_up"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/layout_first"
+            android:background="@drawable/ic_instruction_for_you"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="@string/first"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@color/colorIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:text="@string/you_need_to_create_an_account_to_use_full_range_of_features_at_sign_up_button"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

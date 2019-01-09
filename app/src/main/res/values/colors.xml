@@ -2,13 +2,18 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="colorDialogText">#C92D03</color>
+    <color name="colorAccent">#0D65DC</color>
+    <color name="stateOn">#33A3FF</color>
+    <color name="stateOff">#FF4242</color>
+    <color name="colorGray">#5c5c5c</color>
+    <color name="colorStateConnecting">#31DA61</color>
+    <color name="lightToolbar">#F3F3F3</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000</color>
     <color name="colorBackground">#060622</color>
     <color name="colorUnselectTablayout">#26ffffff</color>
     <color name="colorIndicator">#2F80ED</color>
-
+    <color name="colorNotRed">#E2574C</color>
+    <color name="colorChangePassword">#3291F5</color>
 
 </resources>

@@ -1,4 +1,4 @@
-package com.devhwang.a84974.vpn_android.Login
+package com.devhwang.a84974.vpn_android
 
 import android.content.Context
 import android.os.Bundle
@@ -11,7 +11,7 @@ import com.devhwang.a84974.vpn_android.Login.adapter.MyPagerAdapter
 import com.devhwang.a84974.vpn_android.R
 import kotlinx.android.synthetic.main.fragment_login.*
 
-class LoginFragment : Fragment() {
+class MainFragment : Fragment() {
     var iManagerFragment: IManagerFragment? = null
 
     override fun onAttach(context: Context?) {

@@ -1,77 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:orientation="vertical"
-                android:background="@color/colorBackground"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-    <!--Ve Tinh SignIn-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
     <RelativeLayout
-            android:visibility="visible"
-            android:id="@+id/mLayoutSignIn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
 
-        <ImageView
-                android:layout_alignParentEnd="true"
-                android:layout_width="170dp"
-                android:id="@+id/vetinhxanh"
-                android:src="@drawable/vetinh_signin_1"
-                android:layout_height="145dp"/>
-
-        <ImageView
-                android:layout_width="@dimen/margin_65"
-                android:layout_marginTop="10dp"
-                android:layout_alignStart="@id/vetinhxanh"
-                android:src="@drawable/vetinh_signin_2"
-                android:layout_height="@dimen/margin_65"/>
-    </RelativeLayout>
-    <!--End-->
-    <!--Ve Tinh Sign Up-->
-    <RelativeLayout
-            android:visibility="invisible"
-            android:id="@+id/mLayoutSignUp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        <ImageView
-
-                android:layout_alignParentEnd="true"
-                android:layout_width="170dp"
-                android:id="@+id/vetinh_signup_1"
-                android:src="@drawable/vetinh_signup_1"
-                android:layout_height="207dp"/>
-
-        <ImageView
-
-                android:layout_width="@dimen/margin_65"
-                android:layout_marginTop="10dp"
-                android:layout_alignStart="@id/vetinh_signup_1"
-                android:src="@drawable/vetinh_signup_2"
-                android:layout_height="@dimen/margin_65"/>
-    </RelativeLayout>
-    <!--End-->
-    <include
-            android:id="@+id/toolbar"
-            android:layout_marginTop="@dimen/margin_26"
-            layout="@layout/toolbar_login"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"/>
-
-    <android.support.design.widget.TabLayout
-            android:id="@+id/mTabLayout"
-            app:tabTextColor="@color/colorUnselectTablayout"
-            app:tabIndicatorColor="@color/colorIndicator"
-            app:tabSelectedTextColor="@color/colorWhite"
-            android:layout_below="@+id/toolbar"
-            android:minWidth="@dimen/margin_200"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    <android.support.v4.view.ViewPager
-            android:id="@+id/mViewPager"
-            android:layout_below="@+id/mTabLayout"
+            android:orientation="vertical"
+            android:background="@color/colorBackground"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent">
+        <!--Ve Tinh SignIn-->
+        <RelativeLayout
+                android:visibility="visible"
+                android:id="@+id/mLayoutSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-</RelativeLayout>
+            <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="@dimen/_150sdp"
+                    android:id="@+id/vetinhxanh"
+                    android:src="@drawable/vetinh_signin_1"
+                    android:layout_height="@dimen/_130sdp"/>
+
+            <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_alignStart="@id/vetinhxanh"
+                    android:src="@drawable/vetinh_signin_2"
+                    android:layout_height="@dimen/_50sdp"/>
+        </RelativeLayout>
+        <!--End-->
+        <!--Ve Tinh Sign Up-->
+        <RelativeLayout
+                android:visibility="invisible"
+                android:id="@+id/mLayoutSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="@dimen/_150sdp"
+                    android:id="@+id/vetinh_signup_1"
+                    android:src="@drawable/vetinh_signup_1"
+                    android:layout_height="@dimen/_190sdp"/>
+
+            <ImageView
+
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignStart="@id/vetinh_signup_1"
+                    android:src="@drawable/vetinh_signup_2"
+                    android:layout_height="@dimen/_65sdp"/>
+        </RelativeLayout>
+        <!--End-->
+        <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_login"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TabLayout
+                android:id="@+id/mTabLayout"
+                app:tabTextColor="@color/colorUnselectTablayout"
+                app:tabIndicatorColor="@color/colorIndicator"
+                app:tabSelectedTextColor="@color/colorWhite"
+                android:layout_below="@+id/toolbar"
+                android:minWidth="@dimen/_200sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <android.support.v4.view.ViewPager
+                android:id="@+id/mViewPager"
+                android:layout_below="@+id/mTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+</layout>
